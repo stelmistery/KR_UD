@@ -1,0 +1,96 @@
+.inner_copy, .inner_copy a {
+    border:0;
+    float:right;
+    background:#fff;
+    color:#f00;
+    width:50%;
+    line-height:10px;
+    font-size:13px;
+    margin:-220% 0 0 0;
+    overflow:hidden;
+    padding:0
+}
+
+* {
+    color:#000;
+    text-decoration:none
+}
+body {
+    background:#CCC url('../images/bg.gif') repeat-y fixed bottom center;
+    color:#333;
+    margin:20px 0;
+    text-align:center;
+    font-size: 12pt;
+    font-family: Arial;
+}
+.gfx {
+    background:#F5F5F5 url(../images/books.jpg) no-repeat;
+    display:block;
+    height:350px
+}
+.center {text-align:center}
+
+/* main */
+.main {
+    background:#FFF;
+    border:3px double #EEE;
+    border-color:#E4E4E4 #CFCFCF #CCC #CFCFCF;
+    margin:20px auto 4px auto;
+    text-align:left;
+    width:820px;
+}
+.container {margin:10px}
+/* menu */
+.menu a {background:#EEE;
+    border-right:1px solid #CECECE;
+    border-top:1px solid #E5E5E5;
+    color:#888;float:left;
+    padding-top:4px;
+    width:160px;
+    height:36px
+}
+
+.menu a span {
+    padding-left:6px
+}
+.menu a:hover {
+    background:#EEE;
+    color:#555
+}
+.menu a#last {
+    width:156px;
+    border-right:none
+}
+/* content */
+.content {
+    background:#F5F5F5;
+    border-top:1px solid #E5E5E5;
+    clear:both
+}
+
+.content p {
+    margin:3px 0 6px;
+    /*color:#666*/
+}
+.item {
+    padding:10px
+}
+/* footer */
+.footer {
+    padding:5px;
+    background:#F5F5F5;
+    color:#666
+}
+.footer .left, .footer .right {
+    padding:0 12px
+}
+
+.footer .right, .footer .right a {
+    color:#AAA
+}
+
+.footer .right a:hover {color:#444}
+/* floats */
+.left {float:left}
+.right {float:right}
+.clearer {clear:both}

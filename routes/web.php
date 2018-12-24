@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/main', function(){
+    return view('library.main');
+});
+
+Route::get('/lib/{page}', 'LibraryController@Librarypage', function ($page){
+})->middleware('auth');
