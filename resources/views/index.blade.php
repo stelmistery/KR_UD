@@ -15,9 +15,10 @@
             <div class="gfx"></div>
             <div class="menu">
                 <a href="/"><span>Главная</span></a>
+                <a href="/home"><span>Вход</span></a>
                 <a href="/lib/reads"><span>Список читателей</span></a>
                 <a href="/lib/books"><span>Список книг</span></a>
-                <a href="/lib/orders"><span>Список кни2г</span></a>
+                <a href="/lib/orders"><span>Список выданных книг</span></a>
                 <a href="/lib/createorders" id="last"><span>Выдача книг</span></a>
             </div>
             <div class="content">

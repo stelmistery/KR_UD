@@ -69,11 +69,14 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
+                        <a href="/main">Библиотека</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
+                        <a href="/main">Библиотека</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
+                            <a href="/main">Библиотека</a>
                         @endif
                     @endauth
                 </div>
@@ -91,6 +94,7 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/main">Библиотека</a>
                 </div>
             </div>
         </div>

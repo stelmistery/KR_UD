@@ -18,6 +18,8 @@ class CreateLibrarianTable extends Migration
             $table->string('Фамилия',50);
             $table->string('Имя',50);
             $table->string('Отчество',50);
+            $table->string('password');
+            $table->string('login');
         });
     }
 

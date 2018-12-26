@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                        <a href="/main">Библиотека</a>
                 </div>
             </div>
         </div>
