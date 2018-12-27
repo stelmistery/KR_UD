@@ -28,6 +28,8 @@ Route::get('/main', function(){
 
 Route::get('/lib/{page}', 'LibraryController@Librarypage', function ($page){})->middleware('auth');
 
+Route::get('/lib/createorders/create', 'LibraryController@Createorders')->middleware('auth');
+
 Route::any('/auth', 'LibraryController@Librarianlogin');
 //Route::any('/main', 'LibraryController@libbooks');
 

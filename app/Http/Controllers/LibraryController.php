@@ -16,38 +16,25 @@ class LibraryController extends Controller
                return view('library.listbooks');
                break;
            case "orders" :
-               return view('library.listorders');
+               $result = DB::table('vidacha knig')->get();
+               return view('library.listorders')->with('table', $result);
                break;
            case "createorders" :
-//               return view('library.crorders');
-               function (Request $request){
-                   return $request->session()->all();
-               };
+               return view('library.crorders');
+                break;
            case "auth" :
                return view('library.auth');
                break;
        }
    }
 
-   public function Librarianlogin(Request $request){
-       session_start();
-       if (isset($request->login) && isset($request->password)){
-           $login = $request->login;
-           $password = $request->password;
+   public function Createorders(Request $request){
+        $id_reader = $request->id_reader;
+        $id_lib = $request->id_lib;
+        $id_book = $request->id_book;
 
-           $result = DB::table('librarian')->where([
-               ['login', $login],
-               ['password', $password]
-           ])->first();
-
-           if (isset($result)){
-               $request->session()->regenerate();
-               return $request->session()->all();
-//               return response()->json(['active' => true]);
-           } else {
-               echo "Ошибка";
-           }
-       }
+        DB::table('vidacha knig')->insert(['nomer chitatelya' => $id_reader, 'nomer bibliotekarya' => $id_lib, 'nomer knigi' => $id_book]);
+        return view('library.listorders');
    }
 
 //   public function libbooks(Request $request){
