@@ -50,4 +50,9 @@ class LibraryController extends Controller
        }
    }
 
+//   public function libbooks(Request $request){
+//       $result = DB::table('books')->get();
+//       var_dump($result);
+//   }
+
 }

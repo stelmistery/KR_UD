@@ -14,7 +14,7 @@
         <div class="container"><div class="inner_copy"><div class="inner_copy"></div></div>
             <div class="gfx"></div>
             <div class="menu">
-                <a href="/"><span>Главная</span></a>
+                <a href="/main"><span>Главная</span></a>
                 <a href="/home"><span>Вход</span></a>
                 <a href="/lib/reads"><span>Список читателей</span></a>
                 <a href="/lib/books"><span>Список книг</span></a>

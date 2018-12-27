@@ -14,10 +14,10 @@ class CreateBooksTable extends Migration
     public function up()
     {
         Schema::create('books', function (Blueprint $table) {
-            $table->increments('Номер книги');
-            $table->integer('Номер жанра');
-            $table->string('Название книги');
-            $table->string('Автор');
+            $table->increments('Nomer knigi');
+            $table->integer('nomer janra');
+            $table->string('Nazvanie knigi');
+            $table->string('Avtor');
         });
     }
 

@@ -20,7 +20,12 @@ class CreateIssueTable extends Migration
             $table->integer('Номер книги');
             $table->boolean('Состояние')->default(true);
             $table->timestamps();
+
         });
+
+//        Schema::table('issue', function (Blueprint $table) {
+//           $table->foreign('Номер читателя')->references('Номер читателя')->on('reader');
+//        });
     }
 
     /**

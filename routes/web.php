@@ -26,8 +26,11 @@ Route::get('/main', function(){
     return view('library.main');
 });
 
-Route::get('/lib/{page}', 'LibraryController@Librarypage', function ($page){
-});
+Route::get('/lib/{page}', 'LibraryController@Librarypage', function ($page){})->middleware('auth');
+
 Route::any('/auth', 'LibraryController@Librarianlogin');
+//Route::any('/main', 'LibraryController@libbooks');
+
+
 
 

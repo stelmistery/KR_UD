@@ -14,8 +14,8 @@ class CreateGenreTable extends Migration
     public function up()
     {
         Schema::create('genre', function (Blueprint $table) {
-            $table->increments('Номер жанра');
-            $table->string('Название жанра', 20);
+            $table->increments('NOmer janra');
+            $table->string('Nazvanie janra', 20);
         });
     }
 
