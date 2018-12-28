@@ -1,6 +1,11 @@
-@extends('index')
+@extends('index')   
 
 @section('content')
+    <form action="/lib/closeorder/close">
+       Забрать книгу: <input type="text" name="id_order">
+        <input type="submit" value="Забрать">
+    </form>
+
     <table class="table-list" border="1">
         <tr>
             <td>Запись</td>
@@ -15,11 +20,6 @@
         <tr>
         @foreach($item1 as $key => $initem)
             <td>{{$initem}}</td>
-            @if($key == 'sostoyanie' && $initem = 1)
-                <td>
-                    <input type="submit" value="Забрать">
-                </td>
-                @endif
             @endforeach
         </tr>
         @endforeach

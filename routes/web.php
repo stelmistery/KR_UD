@@ -29,6 +29,9 @@ Route::get('/main', function(){
 Route::get('/lib/{page}', 'LibraryController@Librarypage', function ($page){})->middleware('auth');
 
 Route::get('/lib/createorders/create', 'LibraryController@Createorders')->middleware('auth');
+Route::get('/lib/createreaders/create', 'LibraryController@Createreader')->middleware('auth');
+Route::get('/lib/createbooks/create', 'LibraryController@Createbooks')->middleware('auth');
+Route::get('/lib/closeorder/close', 'LibraryController@Closeoerder')->middleware('auth');
 
 Route::any('/auth', 'LibraryController@Librarianlogin');
 //Route::any('/main', 'LibraryController@libbooks');
